@@ -88,6 +88,10 @@ services:
       context: ../../.
       dockerfile: Dockerfile
     restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: 1  
     ports:
       - "6009:6009"
     expose:
